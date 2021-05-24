@@ -22,8 +22,6 @@ values("assasino", "masculino");
 insert into tb_classe(categoria, genero)
 values("feiticeira", "feminino");
 
-select * from tb_classe;
-
 create table tb_personagens(
 id bigint auto_increment,
 nome varchar(255) not null,
@@ -58,8 +56,6 @@ values("Carlos", "médio",2100,1900,1);
 
 insert into tb_personagens(nome,armadura,ataque,defesa, classe_id)
 values("Bea", "média",1900,1550,5);
-
-select * from tb_personagens;
 
 select * from tb_personagens where ataque > 2000;
 select * from tb_personagens where defesa between 1000 and 2000;
